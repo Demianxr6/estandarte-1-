@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cálculo de Inversión Universitaria</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <div class="card">
+    <h2>Cálculo de Inversión por Ciclo</h2>
+
+    <form id="inversionForm">
+      <label for="creditos">Cantidad de Créditos Matriculados:</label>
+      <input type="number" id="creditos" min="1" step="1" placeholder="Ej. 16" required>
+
+      <button type="submit">Calcular Inversión</button>
+    </form>
+
+    <div id="resultado" class="resultado hidden">
+      <p><strong>Costo por Créditos (<span id="resCantCreditos"></span> × S/. 50.00):</strong> S/. <span id="resMontoCreditos"></span></p>
+      <p><strong>Costo de Matrícula:</strong> S/. <span id="resMatricula"></span> <small id="resEstadoMatricula"></small></p>
+      <hr>
+      <p><strong>Inversión Total del Ciclo:</strong> S/. <span id="resTotal" class="monto-total"></span></p>
+    </div>
+  </div>
+
+  <script src="uno.js"></script>
+</body>
+</html>
